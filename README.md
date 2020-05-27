@@ -1,4 +1,4 @@
-# 2-layer Neural Network using CUDA &amp; MPI
+# 2-layer Fully Connected Neural Network using CUDA &amp; MPI
 This repository contains the final project for Stanford's course in Parallel Computing with CUDA and MPI (CME213). Specifically, a GPU-accelerated parallel implementation of a 2-layer neural network was benchmarked against a serial implementation purely in CPU. 
 * CUDA kernels were written to enable GPU-accelerated matrix operations in the forward and backward pass of the neural network.
 * MPI was used in the training and testing phases to distribute data across multiple GPUs.
