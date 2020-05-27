@@ -6,22 +6,22 @@ This repository contains the final project for Stanford's course in Parallel Com
 
 ## Starter Code
 The following were provided as starter code by the teaching staff of CME213:
-* utils/common.cpp
-* utils/common.h
-* utils/mnist.cpp
-* utils/mnist.h
-* serial baseline in neural_network.cpp
-* functions for comparing neural networks and benchmarking general matrix multiply (GEMM) in utils/test.cpp
+* **utils/common.cpp**
+* **utils/common.h**
+* **utils/mnist.cpp**
+* **utils/mnist.h**
+* serial baseline in **neural_network.cpp**
+* functions for comparing neural networks and benchmarking general matrix multiply (GEMM) in **utils/test.cpp**
 
 ## My Implementation
 The following were implemented by myself:
-* gpu_func.cu
-* gpu_func.h
-* parellel implementation in neural_network.cpp
-* functions for testing other CUDA kernels in utils/test.cpp (e.g. matrix transrpose, softmax, etc.)
+* **gpu_func.cu**
+* **gpu_func.h**
+* parellel implementation in **neural_network.cpp**
+* functions for testing other CUDA kernels in **utils/test.cpp** (e.g. matrix transrpose, softmax, etc.)
 
 ## Compiling the Code
-This project was compiled on a virtual machine (VM) in Google Cloud. For ease of use, bash scripts were provided by the teaching staff to initialize the VMs properly: _create_vm_final_project*.sh_. Notable requirements are:
+This project was compiled on a virtual machine (VM) in Google Cloud. For ease of use, bash scripts were provided by the teaching staff to initialize the VMs properly: __create_vm_final_project*.sh__. Notable requirements are:
 * make
 * gcc
 * CUDA
@@ -30,7 +30,7 @@ This project was compiled on a virtual machine (VM) in Google Cloud. For ease of
 * nvvp
 * Armadillo (C++ linear algebra library)
 
-A _Makefile_ is also provided for easy compilation.
+A **Makefile** is also provided for easy compilation.
 
 ## Running the Code
 To run the compiled code with a single process and GPU:
