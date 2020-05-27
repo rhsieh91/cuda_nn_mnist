@@ -18,7 +18,7 @@ The following were implemented by myself:
 * **gpu_func.cu**
 * **gpu_func.h**
 * parellel implementation in **neural_network.cpp**
-* functions for testing other CUDA kernels in **utils/test.cpp** (e.g. matrix transrpose, softmax, etc.)
+* functions for testing other CUDA kernels in **utils/test.cpp** (e.g. matrix transpose, softmax, etc.)
 
 ## Compiling the Code
 This project was compiled on a virtual machine (VM) in Google Cloud. For ease of use, bash scripts were provided by the teaching staff to initialize the VMs properly: __create_vm_final_project*.sh__. Notable requirements are:
