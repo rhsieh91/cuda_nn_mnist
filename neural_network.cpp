@@ -281,7 +281,9 @@ void train(NeuralNetwork& nn, const arma::mat& X, const arma::mat& y,
     }
 }
 
-
+// ************************************************************************
+// BEGINNING OF PARALLEL IMPLEMENTATION
+// ************************************************************************
 class NNDeviceCache {
 public:
     double *W1, *b1, *W2, *b2; // network weights and biases
