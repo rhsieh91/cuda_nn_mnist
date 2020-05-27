@@ -39,7 +39,7 @@ To run the compiled code with a single process and GPU:
 ```
 ./main [args]
 ```
-To run the compiled code with *N* processes and GPUs
+To run the compiled code with *N* processes and GPUs:
 ```
 mpirun -mca btl ^openib -n [N] ./main [args]
 ```
@@ -49,7 +49,7 @@ Args:
 * **-l num** controls learning rate
 * **-e num** controls number of epochs
 * **-b num** controls batch size 
-* **./main** with no args will run all default test cases
+* **./main** with no args will run default test cases
 
 ## Details and Results
 Both the serial and parallel implementations were able to achieve above 90% classification accuracy on the validation set. However, the crux of this project was to investigate the speed-up provided by a parallel implementation. By using 4 MPI processes distributed across 4 GPUs, the training time was 10x faster than the serial baseline.
