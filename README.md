@@ -54,5 +54,5 @@ Args:
 ## Details and Results
 Both the serial and parallel implementations were able to achieve above 90% classification accuracy on the validation set. However, the crux of this project was to investigate the speed-up provided by a parallel implementation. By using 4 MPI processes distributed across 4 GPUs, the training time was 10x faster than the serial baseline.
 
-Furthermore, an in-depth profiling of the CUDA kernels using NVIDIA Visual Profiler reveals that the bottleneck in the neural network is in the general matrix multiply (GEMM) operation. Two variants of GEMM were written: a straightforward implementation using global memory and an optimized implementation that used shared memory for memory re-use. As expected, the optimized GEMM kernel using shared memory was significantly faster.
+Furthermore, an in-depth profiling of the CUDA kernels using NVIDIA Visual Profiler reveals that the bottleneck in the neural network is in the general matrix multiply (GEMM) operation. Two variants of GEMM were written: a straightforward implementation using global memory and an optimized implementation using shared memory. As expected, the shared memory GEMM kernel was significantly faster by taking advantage of memory re-use.
 
